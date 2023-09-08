@@ -23,16 +23,16 @@ CREATE TABLE "Campaign" (
     "cf_id" integer   NOT NULL,
     "contact_id" integer   NOT NULL,
     "company_name" varchar   NOT NULL,
-    "description" varchar   NOT NULL,
+    "description" text   NOT NULL,
     "goal" decimal   NOT NULL,
     "pledged" decimal   NOT NULL,
     "outcome" varchar   NOT NULL,
     "backers_count" integer   NOT NULL,
-    "country" char(3)   NOT NULL,
-    "currency" char(3)   NOT NULL,
+    "country" varchar(3)   NOT NULL,
+    "currency" varchar(3)   NOT NULL,
     "launched_date" date   NOT NULL,
     "end_date" date   NOT NULL,
-    "category_id" char(4)   NOT NULL,
+    "category_id" varchar(4)   NOT NULL,
     "subcategory_id" varchar   NOT NULL
 );
 
